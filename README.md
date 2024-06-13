@@ -2,7 +2,21 @@
 
 ----
 
-[TOC]
+- [Dokumentacija za  3D Grafički Prikaz Funkcije ***f(x, y)***](#dokumentacija-za--3d-grafi-ki-prikaz-funkcije----f-x--y----)
+- [plot.c](#plotc)
+  * [Instalacija](#instalacija)
+  * [Korištenje](#kori-tenje)
+    + [Windows:](#windows-)
+    + [Linux:](#linux-)
+  * [Objašnjenje koda:](#obja-njenje-koda-)
+    + [Globalne varijable](#globalne-varijable)
+    + [Funkcije crtanja:](#funkcije-crtanja-)
+      - [Inicijalizacija i postavljanje OpenGL-a](#inicijalizacija-i-postavljanje-opengl-a)
+      - [Promijena Veličine Prozor](#promijena-veli-ine-prozor)
+      - [Rotacija](#rotacija)
+      - [Renderiranje Osi](#renderiranje-osi)
+      - [Evaluacija Izraza](#evaluacija-izraza)
+      - [Prikaz](#prikaz)
 
 # plot.c
 
@@ -11,7 +25,7 @@
 ## Instalacija
 
 1. **Potrebni library-i**:
-    
+   
     - [OpenGL](https://www.mingw-w64.org/downloads/)
     
       - Instalacija OpenGL-a pomocu mingw-64 konzole:
@@ -24,7 +38,7 @@
     - [TinyExpr](https://github.com/codeplea/tinyexpr)
     
 2. **Kompajliranje** *plot.c*:
-    
+   
     ```sh
     gcc plot.c TE\tinyexpr.c -o plot -lfreeglut -lopengl32 -lglu32
     ```
